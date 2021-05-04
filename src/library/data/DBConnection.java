@@ -5,7 +5,7 @@ import java.sql.*;
 public class DBConnection {
     private static final  String HOST = "127.0.0.1";
     private static final  int PORT = 3306;
-    private static final String DB_NAME = "library_db";
+    private static final String DB_NAME = "Library_DB";
     private static final String USERNAME = "root";
     private static final String PASSWORD = "";
 

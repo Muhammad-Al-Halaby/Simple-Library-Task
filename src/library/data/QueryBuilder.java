@@ -1,7 +1,5 @@
 package library.data;
 
-import java.util.ArrayList;
-
 public class QueryBuilder {
     public static String buildInsertQuery(String entityName, Object... values){
         String query = "INSERT INTO " + entityName + " VALUES (";

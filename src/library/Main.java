@@ -6,14 +6,11 @@ import library.pojo.Book;
 import library.pojo.Publisher;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+
 
 public class Main {
 
     public static void main(String[] args) {
-        Connection connection = DBConnection.getConnection();
 
         AuthorDataAccess x = new AuthorDataAccess();
         PublisherDataAccess y = new PublisherDataAccess();
