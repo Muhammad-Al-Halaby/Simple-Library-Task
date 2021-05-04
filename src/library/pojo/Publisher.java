@@ -1,13 +1,10 @@
 package library.pojo;
 
 public class Publisher extends  LibraryEntity{
-
     private int publisher_id;
     private String publisher_name;
 
-
     public Publisher(int publisher_id, String publisher_name) {
-        super("Publisher");
         this.publisher_id = publisher_id;
         this.publisher_name = publisher_name;
     }

@@ -2,12 +2,16 @@ package library.data;
 
 import library.pojo.LibraryEntity;
 
-import java.sql.Connection;
+import java.util.ArrayList;
 
 interface DatabaseAccessModel<T extends LibraryEntity> {
-    default void insert(T obj){
-        Connection connection = DBConnection.getConnection();
-        
-    };
+    ArrayList<T> getAll();
+
+    T getById(int id);
+
     void delete(int id);
+
+    void insert(T record);
+
+    void update(int id, T record);
 }

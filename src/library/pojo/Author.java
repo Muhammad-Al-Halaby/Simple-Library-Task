@@ -1,17 +1,17 @@
 package library.pojo;
 
+import java.util.ArrayList;
+
 public class Author extends  LibraryEntity{
     private int author_id;
     private String author_full_name;
     private String author_biography;
 
     public Author(int author_id, String author_full_name, String author_biography) {
-        super("Author");
         this.author_id = author_id;
         this.author_full_name = author_full_name;
         this.author_biography = author_biography;
     }
-
 
     public int getAuthor_id() {
         return author_id;

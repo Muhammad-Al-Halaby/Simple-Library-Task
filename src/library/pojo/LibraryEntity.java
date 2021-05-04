@@ -1,13 +1,6 @@
 package library.pojo;
 
+import java.util.ArrayList;
+
 public abstract class LibraryEntity {
-    private String entityName;
-
-    public LibraryEntity(String entityName) {
-        this.entityName = entityName;
-    }
-
-    public String getEntityName() {
-        return entityName;
-    }
 }
