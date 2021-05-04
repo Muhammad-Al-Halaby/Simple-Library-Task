@@ -1,2 +1,5 @@
-package library.data;public class DatabaseAccessModel {
+package library.data;
+
+interface DatabaseAccessModel<T> {
+
 }
