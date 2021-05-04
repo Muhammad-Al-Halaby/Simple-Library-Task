@@ -2,7 +2,7 @@ package library.pojo;
 
 import java.util.Date;
 
-public class Book {
+public class Book extends  LibraryEntity{
     private int book_id;
     private String book_isbn;
     private String book_title;
@@ -13,7 +13,8 @@ public class Book {
     private int publisher_id;
     private int author_id;
 
-    public Book(int book_id, String book_isbn, String book_title, int book_number_of_pages, String book_category, String book_language, Date publication_id, int publisher_id, int author_id) {
+    public Book(int book_id, String book_isbn, String book_title, int book_number_of_pages, String book_category, String book_language, Date publication_id, int publisher_id, int author_id ) {
+        super("Book");
         this.book_id = book_id;
         this.book_isbn = book_isbn;
         this.book_title = book_title;
