@@ -1,1 +1,4 @@
-# Simple-Library-Task
+# Simple Library Task
+
+## ER Diagram
+![ERD](./database/ER%20Diagram.png)
