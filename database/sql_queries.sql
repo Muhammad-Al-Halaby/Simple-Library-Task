@@ -4,9 +4,9 @@ USE Library_DB;
 
 CREATE TABLE Publisher
 (
-    Publishder_ID  INT         NOT NULL,
+    Publisher_ID  INT         NOT NULL,
     Publisher_Name VARCHAR(50) NOT NULL,
-    PRIMARY KEY (Publishder_ID)
+    PRIMARY KEY (Publisher_ID)
 );
 CREATE TABLE Author
 (
@@ -27,6 +27,6 @@ CREATE TABLE Book
     Author_ID            INT         NOT NULL,
     Publisher_ID         INT         NOT NULL,
     PRIMARY KEY (Book_ID),
-    FOREIGN KEY (Publisher_ID) REFERENCES Publisher (Publishder_ID),
+    FOREIGN KEY (Publisher_ID) REFERENCES Publisher (Publisher_ID),
     FOREIGN KEY (Author_ID) REFERENCES Author (Author_ID)
 );

@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class AuthorDataAccess implements DatabaseAccessModel{
-    private String entityName = "Author";
+    private final String entityName = "Author";
 
     @Override
     public ArrayList<Author> getAll() {

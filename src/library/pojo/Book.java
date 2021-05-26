@@ -1,7 +1,5 @@
 package library.pojo;
 
-import java.util.Date;
-
 public class Book extends  LibraryEntity{
     private int book_id;
     private String book_isbn;
